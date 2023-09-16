@@ -1,0 +1,19 @@
+{
+  "name": "mediucsm",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.1.0",
+    "gsap": "^3.12.2",
+    "split-type": "^0.3.3",
+    "tailwindcss": "^3.3.3"
+  }
+}
