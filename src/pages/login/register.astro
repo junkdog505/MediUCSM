@@ -4,7 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 <Layout title="Acerca de MediUCSM">
     <div class="h-screen flex flex-row items-center justify-center ml-5 mr-5 gap-8">
         <div class="w-4/6">
-            <img src="/public/img/bg-enfermeria3.webp" alt="">
+            <img src="/img/bg-enfermeria3.webp" alt="">
         </div>
         <div class="w-2/6">
             <form>
@@ -46,8 +46,12 @@ import Layout from "../../layouts/Layout.astro";
                     <label for="terms" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-green-400 hover:underline dark:text-green-400">terms and conditions</a></label>
                   </div>
                 </div>
-                <button type="submit" class="text-zinc-950 bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-700 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Submit</button>
+                <button type="submit" onclick="window.location.href='/login/login'" class="text-zinc-950 bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-700 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" id="btn_register">Registrar</button>
             </form>
         </div>
     </div>
 </Layout>
+
+<script>
+
+</script>

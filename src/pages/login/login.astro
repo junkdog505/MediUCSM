@@ -4,14 +4,14 @@ import Layout from '../../layouts/Layout.astro';
 <Layout title="Acerca de MediUCSM">
     <div class="h-screen flex flex-row items-center justify-center ml-32 gap">
         <div class="w-8/12 ">
-            <video autoplay loop muted controls="false"> <source src="/public/vid/main_bg.webm" type="video/webm">Tu navegador no soporta el elemento de video.</video>
+            <video autoplay loop muted controls="false"> <source src="/vid/main_bg.webm" type="video/webm">Tu navegador no soporta el elemento de video.</video>
         </div>
 
 
         <div class="w-4/12 ">
             <div class="flex flex-col justify-center items-center">
                 <div class="w-6/12">
-                    <img class="mb-20" src="/public/img/ucsm_logo.webp">
+                    <img class="mb-20" src="/img/ucsm_logo.webp">
                 </div>
                 <div class="w-6/12">
                     <form>
@@ -27,9 +27,17 @@ import Layout from '../../layouts/Layout.astro';
                         <div class="flex items-center h-5">
                             <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 " required>
                         </div>
-                        <label for="remember" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Recordar</label>
+                        <div class="flex flex-row justify-between min-w-full">
+                            <div class="flex-1">
+                              <label for="remember" class="text-sm font-medium text-gray-900 dark:text-gray-300">Recordar</label>
+                            </div>
+                            <div class="flex-1">
+                              <a href="/login/register" class="text-green-400 items-end">Regístrese</a>
+                            </div>
+                          </div>
+                          
                         </div>
-                        <button type="submit" class="text-zinc-950 font-semibold bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center ">Ingresar</button>
+                        <button type="submit" onclick="window.location.href='/diagnostic/diagnostic'" class="text-zinc-950 font-semibold bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" id="btn_login">Ingresar</button>
                     </form>
                 </div>
             </div>

@@ -1,0 +1,62 @@
+---
+  import { Icon } from 'astro-icon'
+  import Symptom from '../../components/Symptom.astro';
+---
+<meta charset="UTF-8">
+
+<main class="bg-zinc-900 h-screen">
+    <header>
+        <div class="flex flex-row content-between border mx-24">
+            <div class="flex-1">
+                <!-- <Icon name="mdi:comment-processing" class="max-w-lg text-green-400 w-24 items-start"/> -->
+                <h1 class="text-green-400 text-5xl animate-pulse">Detección de Sintomas</h1>
+                <div class="flex flex-col mx-8 my-8 "> 
+                    <div class="bg-zinc-800 m-25 rounded">
+                        <Symptom title='Dolor de cabeza'/>
+                        <Symptom title='Fiebre'/>
+                        <Symptom title='Congestión nasal'/>
+                        <Symptom title='Tos'/>
+                        <Symptom title='Fatiga'/>
+                        <Symptom title='Dolor corporal'/>
+                        <Symptom title='Malestar general'/>
+                    </div>
+                    <div>
+                        <label for="small-input" class="block mb-2 text-sm font-medium text-green-400">Ingrese sus Sintomas</label>
+                        <div class="flex flex-row.11">
+                            <input type="text" id="sintomasInput" class="block w-full p-2 text-green-400 border border-green-400 rounded-lg bg-zinc-800 sm:text-xs focus:ring-green-400 focus:border-green-500 mr-8">
+                            <button type="submit" class="text-zinc-950 font-semibold bg-green-400 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center" id="btn_login">Consultar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1">
+                <!-- <Icon name="mdi:comment-processing" class="max-w-lg text-green-400 w-24 items-end"/> -->
+                <h1 class="text-green-400 text-5xl animate-pulse">Recomendaciones con IA</h1>
+                <div class="flex flex-col mx-8 my-8"> 
+                    <div class="bg-zinc-800 m-25 rounded">
+                        <div class="flex flex-row">
+                            <label class="text-4xl text-green-400 mx-4">Enfermedad Detectada:</label>
+                            <h2 class="text-green-400 text-4xl ml-4">Gripe</h2>
+                        </div>
+                    </div>
+                    <div class="bg-zinc-800 m-2 rounded">
+                        <h2 class="text-white font-semibold text-lg mb-2 mx-4">Recomendaciones para el tratamiento de la gripe:</h2>
+                        <ul class="list-disc list-inside text-white mx-4">
+                            <li>Descanso: Es importante descansar para permitir que tu cuerpo combata la infección y se recupere. Duerme lo suficiente y evita actividades extenuantes.</li>
+                            <li>Hidratación: Bebe líquidos en abundancia, como agua, té caliente, caldo y bebidas deportivas. La hidratación adecuada es esencial durante la enfermedad.</li>
+                            <li>Medicamentos: Los analgésicos y antifebriles de venta libre, como el paracetamol o el ibuprofeno, pueden ayudar a reducir la fiebre y aliviar el dolor. Sigue las instrucciones de dosificación en el envase.</li>
+                            <li>Descongestionantes: Si tienes congestión nasal, puedes usar descongestionantes nasales de venta libre. Asegúrate de seguir las indicaciones del envase y no usarlos durante un período prolongado.</li>
+                            <li>Gárgaras tibias: Para aliviar el dolor de garganta, puedes hacer gárgaras con agua tibia con sal.</li>
+                            <li>Humidificador: Utilizar un humidificador en tu habitación puede ayudar a aliviar la congestión y la sequedad en la garganta.</li>
+                            <li>Alimentación saludable: Come alimentos nutritivos y fáciles de digerir. Las sopas, frutas y verduras son opciones adecuadas.</li>
+                            <li>Evitar el contacto cercano: Para prevenir la propagación de la gripe, es recomendable quedarte en casa y evitar el contacto cercano con otras personas hasta que estés libre de fiebre durante al menos 24 horas sin el uso de medicamentos para reducir la fiebre.</li>
+                        </ul>
+                        <p class="text-yellow-400 mt-4 mx-4">Especialidad de médico a consultar: Un médico de atención primaria, como un médico de familia o un médico general, puede proporcionarte orientación inicial y tratamiento para la gripe. Si los síntomas son graves o complicados, pueden derivarte a un especialista en enfermedades infecciosas o a un neumólogo según sea necesario.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </header>
+</main>

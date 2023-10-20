@@ -1,13 +1,18 @@
 ---
 ---
-<nav class="fixed top-0 left-0 bg-zinc-900 w-full shadow-md">
-    <div class="container m-auto flex justify-between items-center text-gray-700 ">
-        <h1 class="text-xl font-bold text-green-400 hover:shadow-2xl hover:shadow-green-400/60">MediUCSM</h1>
-        <ul class="hidden md:flex items-center text-base font-semibold cursor-pointer">
-            <li class="text-center w-2/6 text-white hover:bg-green-300 hover:text-zinc-950 rounded duration-300 py-4 px-6 "><a href="/">Inicio</a></li>
-            <li class="text-center w-2/6 text-white hover:bg-green-300 hover:text-zinc-950 rounded duration-300 py-4 px-6"><a href="/about">Nosotros</a></li>
-            <li class="text-center w-2/6 text-white hover:bg-green-300 hover:text-zinc-950 rounded duration-300 py-4 px-6"><a href="/contact">Contacto</a></li>
-        </ul>
-    </div>
-    
+<nav class="fixed top-0 left-0 w-full bg-zinc-900 shadow-md py-6 z-50">
+  <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-green-400 hover:shadow-2xl hover:shadow-green-400/60">MediUCSM</h1>
+      <ul class="md:flex md:items-center z-10 md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+          <li class="mx-4 my-6 md:my-0">
+              <a href="/" class="text-xl text-white hover:text-green-400 duration-300">INICIO</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+              <a href="/about" class="text-xl text-white hover:text-green-400 duration-300">NOSOTROS</a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+              <a href="/contact" class="text-xl text-white hover:text-green-400 duration-300">CONTACTANOS</a>
+          </li>
+      </ul>
+  </div>
 </nav>
